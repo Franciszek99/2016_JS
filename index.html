@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
-    
-<button onclick="myFunction()">Try it</button>
 
-<p id="demo">Hello World!</p>
+<p id="demo"></p>
 
 <script>
-function myFunction() {
-    var text = document.getElementById("demo").innerHTML;
-    document.getElementById("demo").innerHTML = text.toUpperCase();
-}
+var d = new Date();
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+document.getElementById("demo").innerHTML = days[d.getDay()];
 </script>
 
 </body>
