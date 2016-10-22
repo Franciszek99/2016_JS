@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
 <body>
-
+ascending:
 <button onclick="myFunction()">Try it</button>
 
 <p id="demo"></p>
+descending
+<button onclick="myFunction1()">Try it</button>
+
+<p id="demo1"></p>
 
 <script>
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-document.getElementById("demo").innerHTML = fruits;
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;
+document.getElementById("demo1").innerHTML = points;
+
 function myFunction() {
-    fruits.splice(2, 0, "Lemon", "Kiwi");
-    document.getElementById("demo").innerHTML = fruits;
+    points.sort(function(a, b){return a - b});
+    document.getElementById("demo").innerHTML = points;
+}
+function myFunction1() {
+    points.sort(function(a, b){return b - a});
+    document.getElementById("demo1").innerHTML = points;
 }
 </script>
 
