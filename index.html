@@ -3,12 +3,16 @@
 <body>
 
 <p id="demo"></p>
+<p id="demo1"></p>
 
 <script>
-var d = new Date();
-var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-document.getElementById("demo").innerHTML = days[d.getDay()];
+var cars = new Array("Saab", "Volvo", "BMW");
+cars.push("Lemon"); 
+document.getElementById("demo").innerHTML = cars[3];
+document.getElementById("demo1").innerHTML = cars.length;
+cars.push("Lemon"); 
 </script>
 
 </body>
 </html>
+
