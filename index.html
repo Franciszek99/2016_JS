@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <body>
-<button onclick="myFunction()">Try it</button>
+
+<h1>Joining Two Arrays</h1>
 
 <p id="demo"></p>
 
 <script>
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-document.getElementById("demo").innerHTML = fruits;
+var myGirls = ["Cecilie", "Lone"];
+var myBoys = ["Emil", "Tobias", "Linus"];
+var myChildren = myGirls.concat(myBoys);
 
-function myFunction() {
-    fruits[fruits.length] = "Kiwi";
-    document.getElementById("demo").innerHTML = fruits;
-}
+document.getElementById("demo").innerHTML = myChildren;
 </script>
 
 </body>
 </html>
+
