@@ -2,20 +2,16 @@
 <html>
 <body>
 
-<h1>JavaScript while</h1>
-
 <p id="demo"></p>
 
 <script>
-var text = "";
-var i = 0;
-while (i < 10) {
-    text += "<br>The number is " + i;
-    i++;
+try {
+    adddlert("Welcome guest!");
 }
-document.getElementById("demo").innerHTML = text;
+catch(err) {
+    document.getElementById("demo").innerHTML = err.message;
+}
 </script>
 
 </body>
 </html>
-
