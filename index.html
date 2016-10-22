@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
+<button onclick="myFunction()">Try it</button>
 
 <p id="demo"></p>
-<p id="demo1"></p>
-<p id="demo2"></p>
-<p id="demo3"></p>
-<p id="demo4"></p>
-<p id="demo5"></p>
 
 <script>
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
-document.getElementById("demo").innerHTML = fruits.toString();
-document.getElementById("demo1").innerHTML = fruits.join(" * ");
-var x = fruits.pop();
-document.getElementById("demo2").innerHTML = fruits.toString();
-document.getElementById("demo3").innerHTML = x;
-fruits.shift();
-document.getElementById("demo4").innerHTML = fruits.join(" * ");
-fruits.unshift("Lemon");  
-document.getElementById("demo5").innerHTML = fruits.join(" * ");
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+    fruits[fruits.length] = "Kiwi";
+    document.getElementById("demo").innerHTML = fruits;
+}
 </script>
 
 </body>
