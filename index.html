@@ -4,15 +4,23 @@
 
 <p id="demo"></p>
 <p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
 
 <script>
-var cars = new Array("Saab", "Volvo", "BMW");
-cars.push("Lemon"); 
-document.getElementById("demo").innerHTML = cars[3];
-document.getElementById("demo1").innerHTML = cars.length;
-cars.push("Lemon"); 
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+document.getElementById("demo1").innerHTML = fruits.join(" * ");
+var x = fruits.pop();
+document.getElementById("demo2").innerHTML = fruits.toString();
+document.getElementById("demo3").innerHTML = x;
+fruits.shift();
+document.getElementById("demo4").innerHTML = fruits.join(" * ");
+fruits.unshift("Lemon");  
+document.getElementById("demo5").innerHTML = fruits.join(" * ");
 </script>
 
 </body>
 </html>
-
